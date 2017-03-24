@@ -1,0 +1,28 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize"
+    android:background="@color/ColorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/cathedrallogosmall"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <com.cathedrale.cview.TypefaceTextview
+            android:id="@+id/tool_bar_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="Cathedral"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

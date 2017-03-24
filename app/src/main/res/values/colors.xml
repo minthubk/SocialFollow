@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="sky_blue" type="color">#0085B2</item>
+    <item name="red" type="color">#FF0000</item>
+    <color name="ColorPrimary">#51b8f2</color>
+    <color name="ColorPrimaryDark">#C3C3C3</color>
+
+    <color name="search_screen_back">#0085B2</color>
+    <color name="button_back">#0067C1</color>
+    <color name="dilogue_text_color">#1E4059</color>
+
+    <color name="redcolor">#ff0000</color>
+    <color name="green">#008000</color>
+    <color name="blue">#3366ff</color>
+    <color name="orange">#f79646</color>
+    <color name="grey">#6E6E6E</color>
+    <color name="bluedark">#1f497d</color>
+
+</resources>

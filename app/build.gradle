@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.cathedrale"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.1.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.google.android.gms:play-services-gcm:8.1.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.0.9'
+    compile files('libs/droidText.0.2.jar')
+    compile files('libs/socialauth-4.4.jar')
+    compile files('libs/socialauth-android-3.2.jar')
+}

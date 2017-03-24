@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cathedrale.Activity.ReminderActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_layout"></include>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/eyepeace_reminderlayout"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:text="Eyepeace Reminder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_margin="5dp"
+                        android:id="@+id/timeedit"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="fill_parent"
+                        android:textColor="#56a1ba"
+                        android:hint="Enter Time"
+                        android:gravity="center"
+                        android:focusable="false"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/donereminder"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_press"
+                        android:layout_alignParentBottom="true"
+                        android:text="Done"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/cancelreminder"
+                        android:layout_margin="5dp"
+                        android:background="#ffffff"
+                        android:layout_alignParentBottom="true"
+                        android:text="Cancel Reminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

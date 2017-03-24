@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cathedrale">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.cathedrale.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.cathedrale.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".volley.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main.FacebookLoginActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider585102961639312"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"></provider>
+
+        <activity
+            android:name=".Activity.HomeScreenActivity"
+            android:label="@string/title_activity_main_screen"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Activity.ExperienceDryEyes"
+            android:label="@string/title_activity_experience_dry_eyes"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Activity.InstructionalVideoActivity"
+            android:label="@string/title_activity_instructional_video"
+            android:screenOrientation="nosensor" />
+
+        <receiver
+            android:name=".GcmNotification.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.gcmnotification" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GcmNotification.GcmIntentService" />
+
+        <receiver
+            android:name=".Services.NotifyService"
+            android:process=":remote" />
+        <receiver
+            android:name=".Services.CheckWeekService"
+            android:process=":remote" />
+
+        <activity
+            android:name=".Main.NonFacebookUserLoginActivity"
+            android:label="@string/title_activity_new_user_login"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Activity.ReminderActivity"
+            android:label="@string/title_activity_reminder"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Activity.LocationWebviewActivity"
+            android:label="@string/title_activity_location_webview"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Reminders.ReminderListAcitivty"
+            android:label="@string/title_activity_reminder_list_acitivty"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Reminders.EyepeaceReminderAactivity"
+            android:label="@string/title_activity_eyepeace_reminder_aactivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Reminders.EyenutritionReminderActivity"
+            android:label="@string/title_activity_eyenutrition_reminder"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Reminders.HeatmassageReminderActivity"
+            android:label="@string/title_activity_heatmassage_reminder"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Reminders.EyedropsReminderActivity"
+            android:label="@string/title_activity_eyedrops_reminder"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Receiver.AlertDialogClass"
+            android:label="@string/title_activity_reminder"
+            android:theme="@style/Theme.Transparent" />
+
+        <receiver android:name=".Receiver.AlertDialogReceiver" />
+
+        <activity
+            android:name=".Graph.BarGraphActivity"
+            android:label="@string/title_activity_bar_graph"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Activity.ReportsActivity"
+            android:label="@string/title_activity_reports"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Activity.QuestioneriesNewActivity"
+            android:label="@string/title_activity_questioneries_new"
+            android:screenOrientation="nosensor"></activity>
+        <activity
+            android:name=".Activity.OtherReportsActivity"
+            android:label="@string/title_activity_other_reports"
+            android:screenOrientation="nosensor"></activity>
+
+    </application>
+
+</manifest>

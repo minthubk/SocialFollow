@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/call_layout"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/phonecall"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Call"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_margin="1dp"
+        android:background="#6cc0e5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:id="@+id/email_layout"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/email"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="EMAIL"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

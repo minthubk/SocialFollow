@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.aspire.cathedraleye.MainScreen">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_layout"></include>
+
+    <LinearLayout
+        android:layout_below="@id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:background="#51b8f2"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/framelayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/pager"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_above="@+id/button1"
+                                android:layout_margin="2dp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dryeyeslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:background="@drawable/blue_oval_border"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:src="@drawable/dryeeyes" />
+
+                        <LinearLayout
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.cathedrale.cview.TypefaceTextview
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Dry Eye"
+                                    android:textColor="#000000" />
+
+                                <com.cathedrale.cview.TypefaceTextview
+                                    android:id="@+id/questions_text"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:text="Take DE Questionnaire"
+                                    android:visibility="gone"
+                                    android:textColor="@color/sky_blue"
+                                    android:layout_marginTop="5dp" />
+                            </LinearLayout>
+
+                            <Switch
+                                android:id="@+id/mySwitch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="No" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:background="#6cc0e5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"></View>
+
+                    <LinearLayout
+                        android:id="@+id/reminderslayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:background="@drawable/blue_oval_border"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:src="@drawable/reminderimage" />
+
+                        <com.cathedrale.cview.TypefaceTextview
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Set Reminders"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <View
+                        android:background="#6cc0e5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"></View>
+
+                    <LinearLayout
+                        android:id="@+id/eyenutritionlayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="visible"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:background="@drawable/blue_oval_border"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:src="@drawable/clapper" />
+
+                        <com.cathedrale.cview.TypefaceTextview
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Media"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <View
+                        android:visibility="visible"
+                        android:background="#6cc0e5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"></View>
+
+                    <LinearLayout
+                        android:id="@+id/contactuslayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:background="@drawable/blue_oval_border"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:src="@drawable/contact" />
+
+                        <com.cathedrale.cview.TypefaceTextview
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Contact Us"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <View
+                        android:background="#6cc0e5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"></View>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:background="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/files"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:src="@drawable/file" />
+
+                <com.cathedrale.cview.TypefaceTextview
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:text="Report"
+                    android:layout_margin="2dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/remainder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/clock" />
+
+                <com.cathedrale.cview.TypefaceTextview
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:text="Reminder"
+                    android:layout_margin="2dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/compass" />
+
+                <com.cathedrale.cview.TypefaceTextview
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:text="HomePage"
+                    android:layout_margin="2dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/buy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/basket" />
+
+                <com.cathedrale.cview.TypefaceTextview
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:text="Buy"
+                    android:layout_margin="2dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

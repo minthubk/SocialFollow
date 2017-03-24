@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cathedral</string>
+    <!--<string name="app_id">115361318834563</string>-->
+    <string name="app_id">585102961639312</string>
+    <string name="No_Patioent_found_message">Sorry, we do not have any patient in our database with specified email address. Please retry with different email. You need to provide the email address you have provided at our clinic.</string>
+    <string name="please_wait_facebooklogin">please wait facebooklogin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="title_activity_view_instuctional_video">ViewInstuctionalVideo</string>
+    <string name="title_activity_experience_dry_eyes">ExperienceDryEyes</string>
+    <string name="title_activity_view_instructional_video">ViewInstructionalVideo</string>
+    <string name="title_activity_instructional_video">InstructionalVideoActivity</string>
+    <string name="title_activity_dryeyes_radiobuttons">DryeyesRadiobuttons</string>
+    <string name="title_activity_dryeye_report">DryeyeReportActivity</string>
+    <string name="title_activity_dry_eyes_questions">DryEyesQuestions</string>
+    <string name="title_activity_new_user_login">NewUserLoginActivity</string>
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="error_network_timeout">error_network_timeout</string>
+    <string name="title_activity_location_webview">LocationWebviewActivity</string>
+    <string name="check_connection">  Please check your data connection.</string>
+    <string name="title_activity_reminder_list_acitivty">ReminderListAcitivty</string>
+    <string name="title_activity_eyepeace_reminder_aactivity">EyepeaceReminderAactivity</string>
+    <string name="title_activity_eyenutrition_reminder">EyenutritionReminderActivity</string>
+    <string name="title_activity_heatmassage_reminder">HeatmassageReminderActivity</string>
+    <string name="title_activity_eyedrops_reminder">EyedropsReminderActivity</string>
+    <string name="title_activity_youtubevideo">YoutubevideoActivity</string>
+    <string name="pref_previously_started">previously started</string>
+    <string name="title_activity_dry_eyes_questioneries">DryEyesQuestioneriesActivity</string>
+    <string name="title_activity_bar_graph">BarGraphActivity</string>
+    <string name="title_activity_reports">ReportsActivity</string>
+    <string name="title_activity_demo">DemoActivity</string>
+    <string name="title_activity_questioneries">QuestioneriesActivity</string>
+    <string name="title_activity_questioneries_new">QuestioneriesNewActivity</string>
+    <string name="title_activity_other_reports">OtherReportsActivity</string>
+    <string name="results_text">Dry Eye questionnaire Results</string>
+    <string name="results_score_text">Your score indicates that you may have normal/mild/moderate/severe. Dry Eye Symptoms and your adherence to treatment has been poor/fair/good. Share this report with your eye doctor regarding your Dry Eye symptoms.</string>
+    <string name="title_activity_sample">Sample</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+
+</resources>

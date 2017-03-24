@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cathedrale.Reminders.ReminderListAcitivty">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_layout"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Are you using ?"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button_press"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Eyepeace"
+            android:textColor="#ffffff"
+            android:id="@+id/eyepeace_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button_press"
+            android:layout_margin="10dp"
+            android:text="Eye Nutrition"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:id="@+id/eyenutritionbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button_press"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Heat Massage"
+            android:id="@+id/heatmassagebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button_press"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Eye Drops"
+            android:textColor="#ffffff"
+            android:id="@+id/eyedropsbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

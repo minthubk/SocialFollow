@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cathedrale.Activity.QuestioneriesNewActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_layout"></include>
+
+    <com.cathedrale.cview.TypefaceTextview
+        android:layout_below="@id/tool_bar"
+        android:id="@+id/questiontext"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_below="@id/questiontext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/questionslist"
+        android:visibility="visible"
+        android:dividerHeight="10dp"
+        android:divider="#FFFFFF"
+        android:listSelector="@color/button_back"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/back_button"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_margin="20dp"
+        android:layout_height="50dp" />
+
+    <com.cathedrale.cview.TypefaceTextview
+        android:layout_below="@id/tool_bar"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_margin="30dp"
+        android:id="@+id/textMessage"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/sky_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</RelativeLayout>

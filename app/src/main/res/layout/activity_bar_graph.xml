@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/screen_shot_layout"
+    tools:context="com.cathedrale.Graph.BarGraphActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_layout"></include>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_below="@id/tool_bar"
+        android:id="@+id/chart"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/reportslayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linearfacebook"
+            android:background="#6177a8"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/fblogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:textColor="#ffffff"
+                style="@android:style/TextAppearance.DeviceDefault.Large"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Post to Facebook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:padding="5dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/facebooklogo"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:id="@+id/facebook" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/twitterlogo"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:id="@+id/twitter" />
+
+            <ImageView
+                android:id="@+id/others"
+                android:layout_weight="1"
+                android:src="@drawable/reports"
+                android:layout_width="52dp"
+                android:layout_height="52dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

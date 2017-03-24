@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cathedrale.Main.NonFacebookUserLoginActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_layout"></include>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/registerlayout"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter Email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_press"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="LOGIN"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

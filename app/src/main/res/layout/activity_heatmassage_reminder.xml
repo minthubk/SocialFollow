@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cathedrale.Activity.ReminderActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_layout"></include>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/eyepeace_reminderlayout"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:text="Heat massage Reminder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Repeat Reminder Everyday at :"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_margin="5dp"
+                        android:id="@+id/timeedit"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="fill_parent"
+                        android:textColor="#56a1ba"
+                        android:hint="Enter Time"
+                        android:gravity="center"
+                        android:focusable="false"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Snooze time :"
+                        android:layout_margin="5dp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioGroup
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:weightSum="2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/radioGroup_first">
+
+
+                        <RadioGroup
+                            android:padding="5dp"
+                            android:weightSum="3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/radioGroup1">
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="5 min"
+                                android:id="@+id/fivemin"
+                                android:checked="false"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="30 min"
+                                android:id="@+id/thirteemin"
+                                android:checked="false"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1 hr"
+                                android:id="@+id/onehr"
+                                android:checked="false"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:padding="5dp"
+                            android:weightSum="3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/radioGroup2">
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2 hr"
+                                android:id="@+id/twohour"
+                                android:checked="false"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="3 hr"
+                                android:id="@+id/threehr"
+                                android:checked="false"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Next Day"
+                                android:id="@+id/nextday"
+                                android:checked="false"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </RadioGroup>
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/donereminder"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_press"
+                        android:layout_alignParentBottom="true"
+                        android:text="Done"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/cancelreminder"
+                        android:layout_margin="5dp"
+                        android:background="#ffffff"
+                        android:layout_alignParentBottom="true"
+                        android:text="Cancel Reminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
